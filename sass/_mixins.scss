@@ -1,0 +1,20 @@
+@mixin col($float, $width, $margin) {
+	float: $float;
+	width: $width;
+	margin-left: $margin;
+}
+
+@mixin bgColour($back, $colour) {
+	background-color: $back;
+	color: $colour;
+}
+
+@mixin HeaderQueries($fontSize,$minHeight) {
+	font-size: $fontSize;
+	line-height: 2rem;
+	min-height: $minHeight;
+	border: none;
+	border-left: 1px solid $lightGrey;
+	padding: 1.0rem;
+	background-color: $white;
+}
