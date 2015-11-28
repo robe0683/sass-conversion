@@ -9,7 +9,7 @@
 	color: $colour;
 }
 
-@mixin HeaderQueries($fontSize,$minHeight) {
+@mixin HeaderQueries($fontSize, $minHeight) {
 	font-size: $fontSize;
 	line-height: 2rem;
 	min-height: $minHeight;
@@ -17,4 +17,39 @@
 	border-left: 1px solid $lightGrey;
 	padding: 1.0rem;
 	background-color: $white;
+}
+
+@mixin headerH1Ifalg() {
+	display: inline;
+	color: $darkBrown;
+	vertical-align: baseline;
+	float: none;
+	font-size: 4rem;
+	line-height: 6.3968rem;
+}
+
+@mixin headerH1IfalgSpan() {
+	float: none;
+	letter-spacing: 0.25rem;
+	font-size: 3.998rem;
+	/**
+        1 lines of 3.998 * 1.6 = 6.3968
+        **/
+	text-align: left;
+}
+
+@mixin headerNav() {
+	position: static;
+	clear: both;
+	width: 100%;
+	padding: 0;
+}
+
+@mixin content2($fontSize) {
+	h4 {
+		font-size: $fontSize;
+	}
+	li {
+		font-size: $fontSize;
+	}
 }

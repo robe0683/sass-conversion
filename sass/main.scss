@@ -147,28 +147,13 @@ header {
 			line-height: 12.7936rem;
 			color: $lightBrown;
 			@include phone {
-				display: inline;
-				color: $darkBrown;
-				vertical-align: baseline;
-				float: none;
-				font-size: 4rem;
-				line-height: 6.3968rem;
+				@include headerH1Ifalg();
 			}
 			@include tablet {
-				display: inline;
-				color: $darkBlue;
-				vertical-align: baseline;
-				float: none;
-				font-size: 4rem;
-				line-height: 6.3968rem;
+				@include headerH1Ifalg();
 			}
 			@include laptop {
-				display: inline;
-				color: $darkBrown;
-				vertical-align: baseline;
-				float: none;
-				font-size: 4rem;
-				line-height: 6.3968rem;
+				@include headerH1Ifalg();
 			}
 		}
 		i.fa-lg ~ span {
@@ -181,53 +166,26 @@ header {
 			padding-left: 1rem;
 			text-align: right;
 			@include phone {
-				float: none;
-				letter-spacing: 0.25rem;
-				font-size: 3.998rem;
-				/**
-        1 lines of 3.998 * 1.6 = 6.3968
-        **/
-				text-align: left;
+				@include headerH1IfalgSpan();
 			}
 			@include tablet {
-				float: none;
-				letter-spacing: 0.25rem;
-				font-size: 3.998rem;
-				/**
-        1 lines of 3.998 * 1.6 = 6.3968
-        **/
-				text-align: left;
+				@include headerH1IfalgSpan();
 			}
 			@include laptop {
-				float: none;
-				letter-spacing: 0.25rem;
-				font-size: 3.998rem;
-				/**
-        1 lines of 3.998 * 1.6 = 6.3968
-        **/
-				text-align: left;
+				@include headerH1IfalgSpan();
 			}
 		}
 	}
 	nav {
 		width: 100%;
 		@include phone {
-			position: static;
-			clear: both;
-			width: 100%;
-			padding: 0;
+			@include headerNav();
 		}
 		@include tablet {
-			position: static;
-			clear: both;
-			width: 100%;
-			padding: 0;
+			@include headerNav();
 		}
 		@include laptop {
-			position: static;
-			clear: both;
-			width: 100%;
-			padding: 0;
+			@include headerNav();
 		}
 	}
 	nav>ul li {
@@ -306,32 +264,17 @@ section {
 	.content2 {
 		padding: 2rem 0;
 		@include phone {
-			h4 {
-				font-size: 1.414rem;
-			}
-			li {
-				font-size: 1.414rem;
-			}
+			@include content2(1.414rem);
 		}
 		@include tablet {
-			h4 {
-				font-size: 1.414rem;
-			}
-			li {
-				font-size: 1.414rem;
-			}
+			@include content2(1.414rem);
 			p {
 				font-size: 1rem;
 				font-weight: 400;
 			}
 		}
 		@include laptop {
-			h4 {
-				font-size: 1.999rem;
-			}
-			li {
-				font-size: 1.999rem;
-			}
+			@include content2(1.999rem);
 			p {
 				font-size: 1.414rem;
 				font-weight: 400;
@@ -473,7 +416,6 @@ header nav {
 	li {
 		font-size: 1.414rem;
 		padding: 0.5rem 2rem;
-
 	}
 }
 
